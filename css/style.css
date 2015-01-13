@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Domine:400,700);
+
+html, body{
+	height:100%;
+	margin: 0px;
+}
+
+h1{
+	font-family: 'Domine', serif;
+	font-weight: 700;
+	color:white;
+}
+
+.v-center {
+    display:table;
+    width:100%;
+    height:100%;
+}
+
+.content {
+    display:table;
+    width:100%;
+    height:100%;
+}
+.table-cell{
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.background-color-primary-0 { background-color: #5D4037 }	/* Main Primary background-color */
+.background-color-primary-1 { background-color: #616161 }
+
+.background-color-secondary-1 { background-color: #7F5431 }	/* Main Secondary background-color (1) */
+
+.background-color-secondary-2 { background-color: #1E4D4B }	/* Main Secondary background-color (2) */
+
+.background-color-complement { background-color: #2B6728 }	/* Main Complement color */
+
+.navbar{
+	background-color: none;
+}
+
+#homeRow {
+	height: 100%;
+}
+
+#experimentsBtn {
+	 transition:all .7s cubic-bezier(.55,0,.1,1);
+	 height:100%;
+}
+
+#projectsBtn {
+	 transition:all .7s cubic-bezier(.55,0,.1,1);
+	 height:100%;
+}
+
+#projects p{
+	display:inline;
+}
