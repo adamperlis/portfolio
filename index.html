@@ -22,13 +22,13 @@
 
 <body>
 
-	<nav class="navbar navbar-fixed-top">
+<!-- 	<nav class="navbar navbar-fixed-top">
     <div class="navbar-left">
     	<h1>Adam Perlis</h1>
     </div>
-  </nav>
+  </nav> -->
 
- 	<div class="row" id="homeRow">
+ 	<!-- <div class="row" id="homeRow">
 		<div class="col-lg-6 background-color-primary-0" id="projectsBtn">
 			<div class="v-center">
         <div class="content">
@@ -47,26 +47,28 @@
           </div>
         </div>
     	</div>
-
 			<span id="description"></span>
 		</div>
-	</div>
+	</div> -->
+<div class="row">
+  <div class="col-lg-12">
+    <div id="projects">
+       
+  	 </div>
+  </div>
+</div>  
 
-	<div id="projects"></div> 
-
-	<!-- <div class="row">
-		<div class="col-lg-6">
-			<span id="title"></span>
-			<span id="description"></span>
-		</div>
-		<div class="col-lg-6">
-		</div>
-	</div>  -->
-	
 	<script id="projectTemplate" type="text/x-behance-template">
-		<div class="project" data-projectid="{{id}}">
-		<h2><a href="#">{{name}}</a></h2>
-		<img src="{{covers_404}}">
+		  <div class="col-lg-4 col-sm-6 col-xs-12 project" data-projectid="{{id}}">
+  		<h2><a href="#">{{name}}</a></h2>
+  		<img src="{{covers_404}}">
+      <section class="projectDetails" style="display:none" data-projectid="{{id}}">
+        <div class="row">
+          <div class="col-lg-1 col-lg-offset-11">
+            <i class="entypo-cancel" style="font-size: 41px;" onclick="function close(){$('section').css('display','none')};close()"></i>
+          </div>
+        </div>
+      </section>
 		</div>
 	</script> 
 

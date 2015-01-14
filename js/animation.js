@@ -1,7 +1,6 @@
 
 $(document).ready(function() {
 	
-	// Optimalisation: Store the references outside the event handler:
     var $window = $(window);
 
     function checkWidth() {
@@ -58,8 +57,6 @@ $(document).ready(function() {
     // Execute on load
     checkWidth();
     // Bind event listener
-    $(window).resize(checkWidth);
-
-	
+    $(window).resize(checkWidth);	
 
 });

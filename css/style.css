@@ -1,5 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Domine:400,700);
 
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-style: normal;
+}
+
 html, body{
 	height:100%;
 	margin: 0px;
@@ -57,4 +65,29 @@ h1{
 
 #projects p{
 	display:inline;
+}
+
+section{
+	background: purple;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	color: white;
+	overflow: visible;
+	overflow-y: scroll;
+}
+
+i{
+	transition:all .7s;
+}
+
+i:hover{
+	opacity:.5;
+	cursor:pointer;
 }
